@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mana Calc</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="content-wrapper">
+        <div class="input-container">
+            <div class="indigon-container">
+                <input type="checkbox" id="indigon" name="indigon" checked>
+                <label for="indigon">Use indigon</label><br>
+                <input type="range" id="indigonRange" name="indigonRange" min="50" max="60" value="50"/>
+                <label id="indigonRangeText" for="indigonRange">50% increased Cost of Skills for each 200 total Mana Spent Recently</label>
+            </div>
+            <br>
+            <div class="options-container">
+                <span class="option">
+                    <label for="extraManaSpent">Extra mana spent: </label>
+                    <input type="number" id="extraManaSpent">
+                </span>
+                <span class="option percentage">
+                    <label for="increasedMana">Increased/decreased cost: </label>
+                    <input type="number" id="increasedMana">
+                </span>
+                <span class="option percentage">
+                    <label for="moreMana">More/less cost: </label>
+                    <input type="number" id="moreMana">
+                </span>
+                <span class="option">
+                    <label for="mana">Unreserved mana: </label>
+                    <input type="number" value="6000" id="mana">
+                </span>
+                <span class="option">
+                    <label for="duration">Simulation duration(seconds): </label>
+                    <input type="number" value="10" id="duration">
+                </span>
+            </div>
+            <hr>
+            <div class="add-remvove-skills">
+                <div id="skills-container">
+    
+                </div>
+                <button id="add-skill" onclick="addSkill()">
+                    + Add skill
+                </button>
+                <button id="calculate">Calculate</button>
+            </div>
+        </div>
+        <hr>
+        <div id="data-display">
+    
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body{
+    background-color: #91b6ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#content-wrapper{
+    margin: auto;
+    box-sizing: border-box;
+    width: 96vw;
+    padding: 15px;
+    margin: auto;
+    background-color:rgb(233, 233, 233);
+}
+.options-container{
+    display: flex; flex-wrap: wrap;
+    gap: 15px;
+}
+.option{
+    display: flex; align-items: center;
+    gap: 10px;
+}
+.option input, .option label{
+    display: block;
+}
+.percentage{
+    position: relative;
+}
+.percentage::after{
+    content: "%"; color: grey;
+    position: absolute; right: 25px;
+}
+button{
+    cursor: pointer;
+}
+#add-skill, #calculate{
+    padding: 8px; margin: 10px 0;
+    background-color: #91b6ff;
+    border: 1px solid blue;
+}
+.removeSkill{
+    height: 25px; width: 25px;  
+    box-sizing: content-box;
+}
+input[type=number]{
+    height: 25px; width: 130px; 
+    position: relative;
+}
+#data-display{
+    width: 96%; margin: auto; max-width: 700px;
+}
+.skill_font{
+    font-weight: 700;
+}
+.skill_0{
+    color: teal;
+}
+.skill_1{
+    color: blueviolet;
+}
+.skill_2{
+    color: rgb(143, 0, 0);
+}
+.skill_3{
+    color: rgb(0, 38, 143);
+}
+.skill_4{
+    color: rgb(168, 158, 7);
+}
+.skill_5{
+    color: rgb(4, 134, 69);
+}
+.skill-wrapper h4{
+    color: inherit; margin: 10px 0;
+}
+.skill-wrapper > label{
+    color: black;
+}
+table{
+    table-layout: fixed;
+    width: 100%; border: 1px solid rgb(253, 148, 253);
+    padding: 10px; font-size: 0.85em;
+    border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px
+}
+tbody td {
+    text-align: center;
+}
+th{
+    background-color: #91b6ff;
+}
+.stripe {
+    background-color: #e1baba;
+}
+td{
+    background-color: inherit;
+}
+
